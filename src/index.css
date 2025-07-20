@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* Setup Theme */
+@theme {
+  --color-primary: #a8d8ea;
+  --color-secondary: #f9ed69;
+  --color-dark: #222831;
+  --color-gray: #9ba4b5;
+
+  --font-logo: "Winky Rough", cursive;
+}
+
+:root {
+  --color-primary: #a8d8ea;
+  --color-secondary: #f9ed69;
+  --color-dark: #222831;
+  --color-gray: #9ba4b5;
+}
+
+/* Light Mode */
+html body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: var(--color-dark);
+}
+
+html body p {
+  color: var(--color-gray);
+}
+
+html body i {
+  color: var(--color-secondary);
+}
+
+/* ============================ */
+/* Dark Mode */
+html.dark body {
+  background-color: var(--color-dark);
+}
+
+html.dark body h1 {
+  color: white;
+}
+
+html.dark body a {
+  color: white;
+}
+
+html.dark body i {
+  color: white;
+}
+
+html.dark body .button-handle-theme:hover {
+  background-color: var(--color-gray);
+}
+
+html.dark body .placeholder-search {
+  color: white;
+}
+
+html.dark body .placeholder-search::placeholder {
+  color: var(--color-gray);
+}
+
+html.dark body label {
+  color: white;
+}
+
+html.dark body select {
+  color: var(--color-gray);
+  background-color: var(--color-dark);
+}
+
+html.dark body .cards {
+  box-shadow: 0px 2px 5px var(--color-gray);
+}
+
+html.dark body .title-card {
+  transition: 0.2s;
+}
+
+html.dark body .title-card:hover {
+  filter: brightness(0.8);
+}
+
+.waver {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
