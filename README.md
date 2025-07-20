@@ -1,12 +1,19 @@
-# React + Vite
+🎬 Movie Explorer – Discover Your Favorite Films
+Deskripsi Proyek:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Explorer adalah aplikasi web pencarian film yang dibuat menggunakan React dan Tailwind CSS. Website ini memungkinkan pengguna untuk mencari film, melihat detail seperti sinopsis, genre, rating, dan gambar latar film. Aplikasi ini juga dilengkapi dengan fitur dark mode untuk kenyamanan pengguna saat menjelajah di malam hari.
 
-Currently, two official plugins are available:
+Fitur Unggulan:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Pencarian film berdasarkan judul
 
-## Expanding the ESLint configuration
+📝 Halaman detail film lengkap dengan sinopsis dan rating
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌙 Dark mode toggle
+
+🎨 Responsive design yang ramah mobile
+
+⚛️ Dibangun menggunakan ReactJS & TailwindCSS
+
+Teknologi:
+React, React Router, Tailwind CSS, TMDB API (The Movie Database)
